@@ -35,7 +35,7 @@ const New = () => {
   };
 
   return (
-    <div style={{ position: "relative" }}>
+    <div style={{ position: "relative", paddingLeft: "169px" }}>
       <BreadCrumb />
       <div style={{ display: "flex", gap: "58px" }}>
         <LeftSection handleSearch={handleSearch} />

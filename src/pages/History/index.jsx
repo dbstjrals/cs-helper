@@ -28,14 +28,14 @@ const History = () => {
           },
         }
       );
-      setHistory(res.data);
+      setHistory(res.data.toReversed());
       console.log(res.data);
     };
     fetchHistory();
   }, []);
 
   return (
-    <div style={{ display: "flex", gap: "58px" }}>
+    <div style={{ display: "flex", gap: "58px", paddingLeft: "169px" }}>
       <LeftSection
         history={history}
         selected={selected}

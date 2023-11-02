@@ -1,8 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Title from "./Title";
-import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Button from "./Button";
-import axios from "axios";
 
 const RightSection = ({ q, a }) => {
   const navigate = useNavigate();
@@ -12,7 +11,7 @@ const RightSection = ({ q, a }) => {
   return (
     <div style={{ marginTop: "42px", width: "572px" }}>
       <Title boldText={"가장 유사한 FAQ"} normalText={"입니다"} />
-      <div
+      {/* <div
         style={{
           margin: "24px 0",
           height: "138px",
@@ -39,10 +38,11 @@ const RightSection = ({ q, a }) => {
           Q
         </b>
         <p>{q}</p>
-      </div>
+      </div> */}
       <div
         style={{
-          height: "396px",
+          marginTop: "24px",
+          height: "558px",
           boxSizing: "border-box",
           borderRadius: "20px",
           backgroundColor: "#F8F8F8",

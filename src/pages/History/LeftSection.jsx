@@ -3,6 +3,9 @@ import Title from "../../components/Title";
 import { useSearchParams } from "react-router-dom";
 
 const LeftSection = ({ history, selected, setSelected }) => {
+  const newHistory = history?.reverse();
+  console.log(history);
+  console.log(history.reverse());
 
   return (
     <div style={{ marginTop: "42px", width: "572px" }}>
@@ -46,9 +49,7 @@ const LeftSection = ({ history, selected, setSelected }) => {
               >
                 Q
               </b>
-              <p>
-                {item.question}
-              </p>
+              <p>{item.question}</p>
             </div>
           );
         })}
